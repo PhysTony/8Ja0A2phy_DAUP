@@ -1,0 +1,43 @@
+1. How many csv file does our dataset have ?
+2
+we have two csv files in our dataset:
+1- listening.csv
+2-genre.csv
+
+
+2. In distributed data processing we divide the data into smaller parts called...
+RDD
+
+
+3. While loading a csv file why we put the option inferSchema to be true?
+this option will infer column types based on the dataset
+
+
+4. While loading a csv file why we put the option header to be true?
+this option will set the column names as they were mentioned in the csv file
+
+
+5. which method is used for showing the content of a pyspark dataframe ?
+.show()
+
+
+6. how we can delete rows with null values in pyspark dataframe ?
+df.na.drop()
+
+
+7. How to drop a column in pyspark dataframe ?
+df.drop('column_name')
+
+
+8. how to select col1 and col2 from pyspark dataframe, df ?
+df.select('col1','col2')
+
+
+9. which of the following methods is used as where clause in sql to select rows that satisfy a
+condition of a pyspark dataframe?
+df.filter(condition)
+
+
+10. which option is the correct one for inner joining two pyspark dataframes df1 and df2 on column
+col?
+df1.join(df2 ,on=['col'], how='inner')
